@@ -4,13 +4,23 @@ layout: cv
 title: "Mehul Bapat"
 ---
 
-# About Me
+# Mehul Bapat
 
 Ph.D. candidate in Computational Fluid Mechanics with expertise in CFD, FEA, and molecular dynamics. Experienced in COMSOL, ANSYS, LAMMPS, and FEniCS for simulating flow, deformation, and transport.
 
 ---
 
-# Education
+<details open>
+<summary><strong>About Me</strong></summary>
+
+Ph.D. candidate in Computational Fluid Mechanics at Carnegie Mellon University. Researching nanoscale slip, interfacial hydrodynamics, and molecular modeling.
+
+</details>
+
+---
+
+<details>
+<summary><strong>Education</strong></summary>
 
 - **Ph.D., Computational Fluid Mechanics**  
   Carnegie Mellon University, Pittsburgh, USA, *Jul 2021 – Aug 2025 (expected)*
@@ -21,9 +31,12 @@ Ph.D. candidate in Computational Fluid Mechanics with expertise in CFD, FEA, and
 - **B.S., Chemical Engineering**  
   IIT (BHU) Varanasi, India, *Jul 2015 – May 2019*
 
+</details>
+
 ---
 
-# Research & Experience
+<details>
+<summary><strong>Research & Experience</strong></summary>
 
 - **Thesis Research – Interfacial Slip**  
   Developed a dispersion model to predict interfacial slip with 99% accuracy. Modeled polymer deformation and friction effects.  
@@ -35,25 +48,36 @@ Ph.D. candidate in Computational Fluid Mechanics with expertise in CFD, FEA, and
 - **Microreactor Mixing Studies**  
   Simulated gas transport and achieved 95% mixing via COMSOL optimization.
 
+</details>
+
 ---
 
-# Publications
+<details>
+<summary><strong>Publications</strong></summary>
 
 - Bapat, M., & Wang, G. J. (2025). *Revealing nanoscale slip within Taylor-Aris dispersion*, Nanoscale. [DOI](https://doi.org/10.1039/D4NR03468F)
 
 - Bapat, M. et al. (In prep). *Degradability and crystallinity of disulfide-containing polymers*
 
+</details>
+
 ---
 
-# Talks
+<details>
+<summary><strong>Talks</strong></summary>
 
-- AIChE, 2024 – *Hydrodynamic slip in nanochannels*
+- AIChE, 2024 – *Hydrodynamic slip in nanochannels*  
 - APS DFD, 2022 – *Onset of slip in polymeric LJ fluids*
 
+</details>
+
 ---
 
-# Contact
+<details>
+<summary><strong>Contact</strong></summary>
 
 📧 mhlbapat@gmail.com  
 🔗 [LinkedIn](https://linkedin.com/in/mhlbapat)  
 📚 [Google Scholar](https://scholar.google.com/citations?user=9zqqN1cAAAAJ)
+
+</details>
