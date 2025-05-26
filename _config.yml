@@ -1,0 +1,22 @@
+
+title: "Mehul Bapat"
+email: mhlbapat@gmail.com
+description: >- 
+  Ph.D. candidate in Computational Fluid Mechanics with expertise in CFD, FEA, and molecular dynamics.
+baseurl: "" 
+url: "https://mhlbapat.github.io"
+github_username: mhlbapat
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-scholar
+
+scholar:
+  style: apa
+  locale: en
+
+markdown: kramdown
+highlighter: rouge
