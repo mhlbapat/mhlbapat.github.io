@@ -5,15 +5,40 @@ title: "Mehul Bapat"
 ---
 
 <style>
-.tab-container {
+.profile-layout {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.profile-sidebar {
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+}
+.profile-sidebar img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.profile-sidebar h1 {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.2em 0;
+}
+.profile-sidebar p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.profile-content {
+  flex: 1;
+  min-width: 300px;
 }
 .tab-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 .tab-buttons button {
   padding: 10px 20px;
@@ -29,67 +54,76 @@ title: "Mehul Bapat"
 }
 .tab-content {
   display: none;
-  margin-top: 1rem;
 }
 .tab-content.active {
   display: block;
 }
 </style>
 
-<div class="tab-container">
-  <div class="tab-buttons">
-    <button class="tablink active" onclick="openTab(event, 'about')">About</button>
-    <button class="tablink" onclick="openTab(event, 'education')">Education</button>
-    <button class="tablink" onclick="openTab(event, 'research')">Research</button>
-    <button class="tablink" onclick="openTab(event, 'publications')">Publications</button>
-    <button class="tablink" onclick="openTab(event, 'talks')">Talks</button>
-    <button class="tablink" onclick="openTab(event, 'contact')">Contact</button>
+<div class="profile-layout">
+  <div class="profile-sidebar">
+    <img src="assets/img/profile.jpg" alt="Mehul Bapat">
+    <h1>Mehul Bapat</h1>
+    <p>Ph.D. Candidate in Computational Fluid Mechanics</p>
+    <p><a href="mailto:mhlbapat@gmail.com">mhlbapat@gmail.com</a></p>
+    <p><a href="https://linkedin.com/in/mhlbapat">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=9zqqN1cAAAAJ">Google Scholar</a></p>
   </div>
 
-  <div id="about" class="tab-content active">
-    <h2>About Me</h2>
-    <p>Ph.D. candidate in Computational Fluid Mechanics at Carnegie Mellon University. Researching nanoscale slip, interfacial hydrodynamics, and molecular modeling.</p>
-  </div>
+  <div class="profile-content">
+    <div class="tab-buttons">
+      <button class="tablink active" onclick="openTab(event, 'about')">About</button>
+      <button class="tablink" onclick="openTab(event, 'education')">Education</button>
+      <button class="tablink" onclick="openTab(event, 'research')">Research</button>
+      <button class="tablink" onclick="openTab(event, 'publications')">Publications</button>
+      <button class="tablink" onclick="openTab(event, 'talks')">Talks</button>
+      <button class="tablink" onclick="openTab(event, 'contact')">Contact</button>
+    </div>
 
-  <div id="education" class="tab-content">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Ph.D., Computational Fluid Mechanics</strong><br>Carnegie Mellon University, 2021–2025 (expected)</li>
-      <li><strong>M.S., Chemical Engineering</strong><br>Carnegie Mellon University, 2019–2020</li>
-      <li><strong>B.S., Chemical Engineering</strong><br>IIT (BHU) Varanasi, 2015–2019</li>
-    </ul>
-  </div>
+    <div id="about" class="tab-content active">
+      <h2>About Me</h2>
+      <p>Ph.D. candidate in Computational Fluid Mechanics at Carnegie Mellon University. Researching nanoscale slip, interfacial hydrodynamics, and molecular modeling.</p>
+    </div>
 
-  <div id="research" class="tab-content">
-    <h2>Research & Experience</h2>
-    <ul>
-      <li><strong>Thesis Research – Interfacial Slip:</strong> Developed a dispersion model to predict interfacial slip with 99% accuracy. Saved 90% of computational costs.</li>
-      <li><strong>Carbon Capture Optimization:</strong> FEA simulations for wetted catalyst area improvement.</li>
-      <li><strong>Microreactor Studies:</strong> COMSOL simulations achieved 95% mixing.</li>
-    </ul>
-  </div>
+    <div id="education" class="tab-content">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Ph.D., Computational Fluid Mechanics</strong> – Carnegie Mellon University, 2021–2025 (expected)</li>
+        <li><strong>M.S., Chemical Engineering</strong> – Carnegie Mellon University, 2019–2020</li>
+        <li><strong>B.S., Chemical Engineering</strong> – IIT (BHU) Varanasi, 2015–2019</li>
+      </ul>
+    </div>
 
-  <div id="publications" class="tab-content">
-    <h2>Publications</h2>
-    <ul>
-      <li>Bapat, M., & Wang, G. J. (2025). <i>Revealing nanoscale slip within Taylor-Aris dispersion</i>, Nanoscale. <a href="https://doi.org/10.1039/D4NR03468F">DOI</a></li>
-      <li>Bapat, M. et al. (In prep). <i>Degradability and crystallinity of disulfide-containing polymers</i></li>
-    </ul>
-  </div>
+    <div id="research" class="tab-content">
+      <h2>Research & Experience</h2>
+      <ul>
+        <li><strong>Thesis Research:</strong> Developed a dispersion model for interfacial slip (99% accuracy), modeled deformation & lubrication. Saved 90% compute time.</li>
+        <li><strong>Topology Optimization:</strong> FEA studies for carbon capture media. Optimized wetted surface area.</li>
+        <li><strong>Microreactor Simulations:</strong> CFD in COMSOL, achieved 95% mixing efficiency.</li>
+      </ul>
+    </div>
 
-  <div id="talks" class="tab-content">
-    <h2>Talks</h2>
-    <ul>
-      <li>AIChE 2024 – Hydrodynamic slip in nanochannels</li>
-      <li>APS DFD 2022 – Onset of slip in polymeric LJ fluids</li>
-    </ul>
-  </div>
+    <div id="publications" class="tab-content">
+      <h2>Publications</h2>
+      <ul>
+        <li>Bapat, M., & Wang, G. J. (2025). <i>Revealing nanoscale slip within Taylor-Aris dispersion</i>, Nanoscale. <a href="https://doi.org/10.1039/D4NR03468F">DOI</a></li>
+        <li>Bapat, M. et al. (In prep). <i>Disulfide polymer degradability and crystallinity</i></li>
+      </ul>
+    </div>
 
-  <div id="contact" class="tab-content">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:mhlbapat@gmail.com">mhlbapat@gmail.com</a><br>
-    LinkedIn: <a href="https://linkedin.com/in/mhlbapat">linkedin.com/in/mhlbapat</a><br>
-    Google Scholar: <a href="https://scholar.google.com/citations?user=9zqqN1cAAAAJ">Scholar Profile</a></p>
+    <div id="talks" class="tab-content">
+      <h2>Talks</h2>
+      <ul>
+        <li>AIChE 2024 – Hydrodynamic slip in nanochannels</li>
+        <li>APS DFD 2022 – Onset of slip in polymeric LJ fluids</li>
+      </ul>
+    </div>
+
+    <div id="contact" class="tab-content">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:mhlbapat@gmail.com">mhlbapat@gmail.com</a><br>
+      LinkedIn: <a href="https://linkedin.com/in/mhlbapat">linkedin.com/in/mhlbapat</a><br>
+      Google Scholar: <a href="https://scholar.google.com/citations?user=9zqqN1cAAAAJ">Scholar Profile</a></p>
+    </div>
   </div>
 </div>
 
