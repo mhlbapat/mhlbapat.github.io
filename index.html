@@ -1,0 +1,109 @@
+
+---
+layout: cv
+title: "Mehul Bapat"
+---
+
+<style>
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tab-buttons button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.tab-buttons button.active {
+  background-color: #004466;
+  color: white;
+}
+.tab-content {
+  display: none;
+  margin-top: 1rem;
+}
+.tab-content.active {
+  display: block;
+}
+</style>
+
+<div class="tab-container">
+  <div class="tab-buttons">
+    <button class="tablink active" onclick="openTab(event, 'about')">About</button>
+    <button class="tablink" onclick="openTab(event, 'education')">Education</button>
+    <button class="tablink" onclick="openTab(event, 'research')">Research</button>
+    <button class="tablink" onclick="openTab(event, 'publications')">Publications</button>
+    <button class="tablink" onclick="openTab(event, 'talks')">Talks</button>
+    <button class="tablink" onclick="openTab(event, 'contact')">Contact</button>
+  </div>
+
+  <div id="about" class="tab-content active">
+    <h2>About Me</h2>
+    <p>Ph.D. candidate in Computational Fluid Mechanics at Carnegie Mellon University. Researching nanoscale slip, interfacial hydrodynamics, and molecular modeling.</p>
+  </div>
+
+  <div id="education" class="tab-content">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Ph.D., Computational Fluid Mechanics</strong><br>Carnegie Mellon University, 2021–2025 (expected)</li>
+      <li><strong>M.S., Chemical Engineering</strong><br>Carnegie Mellon University, 2019–2020</li>
+      <li><strong>B.S., Chemical Engineering</strong><br>IIT (BHU) Varanasi, 2015–2019</li>
+    </ul>
+  </div>
+
+  <div id="research" class="tab-content">
+    <h2>Research & Experience</h2>
+    <ul>
+      <li><strong>Thesis Research – Interfacial Slip:</strong> Developed a dispersion model to predict interfacial slip with 99% accuracy. Saved 90% of computational costs.</li>
+      <li><strong>Carbon Capture Optimization:</strong> FEA simulations for wetted catalyst area improvement.</li>
+      <li><strong>Microreactor Studies:</strong> COMSOL simulations achieved 95% mixing.</li>
+    </ul>
+  </div>
+
+  <div id="publications" class="tab-content">
+    <h2>Publications</h2>
+    <ul>
+      <li>Bapat, M., & Wang, G. J. (2025). <i>Revealing nanoscale slip within Taylor-Aris dispersion</i>, Nanoscale. <a href="https://doi.org/10.1039/D4NR03468F">DOI</a></li>
+      <li>Bapat, M. et al. (In prep). <i>Degradability and crystallinity of disulfide-containing polymers</i></li>
+    </ul>
+  </div>
+
+  <div id="talks" class="tab-content">
+    <h2>Talks</h2>
+    <ul>
+      <li>AIChE 2024 – Hydrodynamic slip in nanochannels</li>
+      <li>APS DFD 2022 – Onset of slip in polymeric LJ fluids</li>
+    </ul>
+  </div>
+
+  <div id="contact" class="tab-content">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mhlbapat@gmail.com">mhlbapat@gmail.com</a><br>
+    LinkedIn: <a href="https://linkedin.com/in/mhlbapat">linkedin.com/in/mhlbapat</a><br>
+    Google Scholar: <a href="https://scholar.google.com/citations?user=9zqqN1cAAAAJ">Scholar Profile</a></p>
+  </div>
+</div>
+
+<script>
+function openTab(evt, tabId) {
+  var tabs = document.getElementsByClassName("tab-content");
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove("active");
+  }
+  var links = document.getElementsByClassName("tablink");
+  for (var i = 0; i < links.length; i++) {
+    links[i].classList.remove("active");
+  }
+  document.getElementById(tabId).classList.add("active");
+  evt.currentTarget.classList.add("active");
+}
+</script>
