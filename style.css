@@ -202,6 +202,77 @@ a {
   box-shadow: var(--shadow);
 }
 
+.flip-card {
+  padding: 0;
+  perspective: 1200px;
+  min-height: 360px;
+}
+
+.card-inner {
+  position: relative;
+  height: 100%;
+  min-height: 360px;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card.is-flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-btn {
+  margin-top: auto;
+  align-self: flex-start;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.media-tile {
+  border-radius: 14px;
+  border: 1px dashed var(--border);
+  min-height: 90px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.card-meta h4 {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 0.95rem;
+}
+
+.card-meta p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .card ul {
   padding-left: 1.2rem;
   margin: 0.8rem 0 0;
