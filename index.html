@@ -8,35 +8,75 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
+  <header class="site-header">
     <nav class="navbar">
+      <div class="nav-brand">Mehul Bapat</div>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#talks">Talks</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="files/Resume.pdf">Resume</a></li>
       </ul>
     </nav>
-    <div class="hero-content">
-      <h1>I'm Mehul Bapat.</h1>
-      <p>
-        I'm a Pittsburgh-based <strong>Ph.D. candidate in Computational Fluid Mechanics</strong>, specializing in nanoscale transport, slip, and simulation using molecular dynamics, FEA, and CFD.
-      </p>
-      <p>
-        In my research, I model interfacial slip, optimize flow systems, and study polymer mechanics.
-      </p>
-      <div class="social-icons">
-        <a href="https://github.com/mhlbapat" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/mhlbapat" target="_blank">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=9zqqN1cAAAAJ" target="_blank">Scholar</a>
-        <a href="mailto:mhlbapat@gmail.com">Email</a>
-      </div>
-      <div class="buttons">
-        <a href="files/Resume.pdf" class="btn primary">Resume</a>
-        <a href="#contact" class="btn">Contact</a>
-      </div>
-    </div>
   </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Ph.D. candidate in Mechanics, Chemistry and Materials</p>
+        <h1>Hi, I'm Mehul Bapat.</h1>
+        <p class="lead">
+          I build physics-based and data-driven models for transport-dominated systems, ranging from
+          nanoscale interfacial slip to reactor-scale CFD. My work blends molecular simulations,
+          reduced-order modeling, and experimental collaboration to make simulation insights actionable.
+        </p>
+        <div class="buttons">
+          <a href="files/Resume.pdf" class="btn primary">Resume</a>
+          <a href="research.html" class="btn">Explore research</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/mhlbapat" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/mhlbapat" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=9zqqN1cAAAAJ" target="_blank" rel="noreferrer">Scholar</a>
+          <a href="mailto:mhlbapat@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-content">
+        <h2>Research focus</h2>
+        <p>
+          My research centers on modeling interfacial transport, hydrophobic surfaces, and
+          energy-efficient process design. I develop multiscale CFD and molecular simulation workflows,
+          build reduced-order models for fast design iteration, and validate simulation predictions
+          against experimental data.
+        </p>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="section-content">
+        <h2>What you'll find here</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Current research</h3>
+            <p>Highlights from interfacial slip, carbon capture, and polymer mechanics projects.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Publications</h3>
+            <p>Peer-reviewed work and ongoing manuscripts, with links to articles and abstracts.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Collaborations</h3>
+            <p>Cross-disciplinary partnerships across academia and national laboratories.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Based in Pittsburgh, PA • <a href="mailto:mhlbapat@gmail.com">mhlbapat@gmail.com</a></p>
+  </footer>
 </body>
 </html>
