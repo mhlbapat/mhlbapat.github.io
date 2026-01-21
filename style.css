@@ -117,6 +117,16 @@ a {
   margin: 0;
 }
 
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
 .buttons {
   margin-top: 1.5rem;
   display: flex;
